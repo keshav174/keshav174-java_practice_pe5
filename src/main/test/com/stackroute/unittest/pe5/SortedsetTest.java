@@ -1,3 +1,5 @@
+package com.stackroute.unittest.pe5;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -21,42 +23,42 @@ public class SortedsetTest {
 
     @Test
     public void sort_set() {
-        HashSet<String> set=new HashSet<>();
+        HashSet<String> set=new HashSet<String>();
         set.add("Alice");
         set.add("Bluto");
         set.add("Eugene");
         set.add("Harry");
         set.add("Olive");
 
-        ArrayList<String> arr=new ArrayList<>();
+        ArrayList<String> arr=new ArrayList<String>();
         arr.add("Alice");
         arr.add("Bluto");
         arr.add("Eugene");
         arr.add("Harry");
         arr.add("Olive");
-     assertEquals("Error",arr,obj.sort_set(set));
+     assertEquals("Error",arr,obj.sortset(set));
     }
 
     @Test
     public void sort_set1() {
-        HashSet<String> set=new HashSet<>();
+        HashSet<String> set=new HashSet<String>();
         set.add("Alice");
         set.add("Carner");
         set.add("Bluto");
         set.add("Harry");
         set.add("Olive");
 
-        ArrayList<String> arr=new ArrayList<>();
+        ArrayList<String> arr=new ArrayList<String>();
         arr.add("Alice");
         arr.add("Bluto");
         arr.add("Carner");
         arr.add("Harry");
         arr.add("Olive");
-        assertEquals("Error",arr,obj.sort_set(set));
+        assertEquals("Error",arr,obj.sortset(set));
     }
     @Test
     public void sort_set3() {
-        HashSet<String> set=new HashSet<>();
+        HashSet<String> set=new HashSet<String>();
         set.add("Alice");
         set.add("Carner");
         set.add("Bluto");
@@ -65,7 +67,7 @@ public class SortedsetTest {
         set.add("Keshav");
         set.add("Kumar");
 
-        ArrayList<String> arr=new ArrayList<>();
+        ArrayList<String> arr=new ArrayList<String>();
         arr.add("Alice");
         arr.add("Bluto");
         arr.add("Carner");
@@ -73,11 +75,11 @@ public class SortedsetTest {
         arr.add("Keshav");
         arr.add("Kumar");
         arr.add("Olive");
-        assertEquals("Error in output",arr,obj.sort_set(set));
+        assertEquals("Error in output",arr,obj.sortset(set));
     }
     @Test
     public void sort_setFailure() {
-        HashSet<String> set=new HashSet<>();
+        HashSet<String> set=new HashSet<String>();
         set.add("Alice");
         set.add("Carner");
         set.add("Bluto");
@@ -86,7 +88,7 @@ public class SortedsetTest {
         set.add("Keshav");
         set.add("Kumar");
 
-        assertNotNull("Error in output",obj.sort_set(set));
+        assertNotNull("Error in output",obj.sortset(set));
 
     }
 

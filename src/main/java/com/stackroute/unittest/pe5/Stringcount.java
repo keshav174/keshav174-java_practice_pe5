@@ -1,9 +1,11 @@
+package com.stackroute.unittest.pe5;
+
 import java.util.HashMap;
 
-public class String_count {
-    public HashMap<String, Integer>no_of_count(String str ) {
+public class Stringcount {
+    public HashMap<String, Integer>noofcount(String str ) {
         String result = str.replaceAll("[-+.^:,@___<>*?_]", " ");
-        HashMap<String, Integer> map = new HashMap<>();
+        HashMap<String, Integer> map = new HashMap<String, Integer>();
         String []str1=result.split("[\\s]");
         for(int i=0;i<str1.length;i++)
         {

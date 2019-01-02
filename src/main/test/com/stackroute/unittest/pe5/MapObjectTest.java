@@ -1,3 +1,5 @@
+package com.stackroute.unittest.pe5;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -21,10 +23,10 @@ public class MapObjectTest {
 
     @Test
     public void modify() {
-        LinkedHashMap<String ,String> hm=new LinkedHashMap<>();
+        LinkedHashMap<String ,String> hm=new LinkedHashMap<String, String>();
         hm.put("val1","java");
         hm.put("val2","c++");
-        HashMap<String ,String>res=new HashMap<>();
+        HashMap<String ,String>res=new HashMap<String, String>();
         res.put("val1"," ");
         res.put("val2","java");
 
@@ -32,10 +34,10 @@ public class MapObjectTest {
     }
     @Test
     public void modify1() {
-        LinkedHashMap<String ,String> hm=new LinkedHashMap<>();
+        LinkedHashMap<String ,String> hm=new LinkedHashMap<String, String>();
         hm.put("val1","keshav");
         hm.put("val2","kumar");
-        HashMap<String ,String>res=new HashMap<>();
+        HashMap<String ,String>res=new HashMap<String, String>();
         res.put("val1"," ");
         res.put("val2","keshav");
 
@@ -43,7 +45,7 @@ public class MapObjectTest {
     }
     @Test
     public void modifyFailure() {
-        LinkedHashMap<String ,String> hm=new LinkedHashMap<>();
+        LinkedHashMap<String ,String> hm=new LinkedHashMap<String, String>();
         hm.put("val1","keshav");
         hm.put("val2","kumar");
 

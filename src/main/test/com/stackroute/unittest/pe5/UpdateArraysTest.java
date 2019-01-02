@@ -1,13 +1,15 @@
+package com.stackroute.unittest.pe5;
+
 import java.util.ArrayList;
 
 import static org.junit.Assert.*;
 
-public class Update_ArraysTest {
-    Update_Arrays obj;
+public class UpdateArraysTest {
+    UpdateArrays obj;
 
     @org.junit.Before
     public void setUp() throws Exception {
-        obj=new Update_Arrays();
+        obj=new UpdateArrays();
     }
 
     @org.junit.After

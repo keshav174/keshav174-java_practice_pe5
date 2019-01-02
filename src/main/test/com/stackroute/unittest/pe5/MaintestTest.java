@@ -1,10 +1,12 @@
+package com.stackroute.unittest.pe5;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
 
-import static org.junit.Assert.*;
+import static junit.framework.TestCase.assertEquals;
 
 public class MaintestTest {
     Maintest obj;
