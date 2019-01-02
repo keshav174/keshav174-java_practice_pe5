@@ -35,7 +35,7 @@ public class MaintestTest {
         arr1.add(new StudentClass(130,16,"Rahul"));
         arr1.add(new StudentClass(140,18,"Adam"));
         arr1.add(new StudentClass(150,18,"Keshav"));
-        assertEquals("Eroor",arr1.toString(),obj.Sortstudent(arr).toString());
+        assertEquals("Error in output",arr1.toString(),obj.Sortstudent(arr).toString());
 
 
 

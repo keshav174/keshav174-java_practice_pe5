@@ -78,7 +78,7 @@ public class Update_ArraysTest {
         list.add("Berry");
         list.add("orange");
 
-        assertNotNull("Error",obj.update(list,0,"kiwi"));
+        assertNotNull("Error in output",obj.update(list,0,"kiwi"));
 
 
     }
@@ -92,7 +92,7 @@ public class Update_ArraysTest {
         list.add("Berry");
         list.add("orange");
         ArrayList<String>list1=new ArrayList<String >();
-        assertEquals("Error",list1,obj.remove(list));
+        assertEquals("Error in output",list1,obj.remove(list));
 
     }
 }

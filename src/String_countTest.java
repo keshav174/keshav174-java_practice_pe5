@@ -48,7 +48,7 @@ public class String_countTest {
         map.put("two",3);
         map.put("three",3);
 
-        assertEquals("error",map,obj.no_of_count(str));
+        assertEquals("Error in output",map,obj.no_of_count(str));
 
     }
     @Test
@@ -59,7 +59,7 @@ public class String_countTest {
         map.put("two",3);
         map.put("three",3);
 
-        assertNotNull("Error",obj.no_of_count(str));
+        assertNotNull("Error in output",obj.no_of_count(str));
 
     }
 }

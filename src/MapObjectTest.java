@@ -39,7 +39,7 @@ public class MapObjectTest {
         res.put("val1"," ");
         res.put("val2","keshav");
 
-        assertEquals("Error",res,obj.modify(hm));
+        assertEquals("Error in output",res,obj.modify(hm));
     }
     @Test
     public void modifyFailure() {
@@ -48,6 +48,6 @@ public class MapObjectTest {
         hm.put("val2","kumar");
 
 
-       assertNotNull("Error",obj.modify(hm));
+       assertNotNull("Error in output",obj.modify(hm));
     }
 }

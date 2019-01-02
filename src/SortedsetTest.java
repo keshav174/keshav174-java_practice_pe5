@@ -73,7 +73,7 @@ public class SortedsetTest {
         arr.add("Keshav");
         arr.add("Kumar");
         arr.add("Olive");
-        assertEquals("Error",arr,obj.sort_set(set));
+        assertEquals("Error in output",arr,obj.sort_set(set));
     }
     @Test
     public void sort_setFailure() {
@@ -86,7 +86,7 @@ public class SortedsetTest {
         set.add("Keshav");
         set.add("Kumar");
 
-        assertNotNull("Error",obj.sort_set(set));
+        assertNotNull("Error in output",obj.sort_set(set));
 
     }
 
