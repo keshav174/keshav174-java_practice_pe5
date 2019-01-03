@@ -30,7 +30,7 @@ public class MapObjectTest {
         res.put("val1"," ");
         res.put("val2","java");
 
-        assertEquals("Error",res,obj.modify(hm));
+        assertEquals("Error in interchanging the values",res,obj.modify(hm));
     }
     @Test
     public void modify1() {
@@ -41,7 +41,29 @@ public class MapObjectTest {
         res.put("val1"," ");
         res.put("val2","keshav");
 
-        assertEquals("Error in output",res,obj.modify(hm));
+        assertEquals("Error in interchanging the values in output",res,obj.modify(hm));
+    }
+    @Test
+    public void modify2() {
+        LinkedHashMap<String ,String> hm=new LinkedHashMap<String, String>();
+        hm.put("val1"," ");
+        hm.put("val2"," ");
+        HashMap<String ,String>res=new HashMap<String, String>();
+        res.put("val1"," ");
+        res.put("val2"," ");
+
+        assertEquals("Error in interchanging the values in output",res,obj.modify(hm));
+    }
+    @Test
+    public void modify3() {
+        LinkedHashMap<String ,String> hm=new LinkedHashMap<String, String>();
+        hm.put("val1","123");
+        hm.put("val2","234");
+        HashMap<String ,String>res=new HashMap<String, String>();
+        res.put("val1"," ");
+        res.put("val2","123");
+
+        assertEquals("Error in interchanging the values in output",res,obj.modify(hm));
     }
     @Test
     public void modifyFailure() {
@@ -50,6 +72,6 @@ public class MapObjectTest {
         hm.put("val2","kumar");
 
 
-       assertNotNull("Error in output",obj.modify(hm));
+       assertNotNull("Error in interchanging the values in output",obj.modify(hm));
     }
 }

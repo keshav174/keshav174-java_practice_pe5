@@ -31,7 +31,7 @@ public class UpdateArraysTest {
         list1.add("kiwi");
         list1.add("Berry");
         list1.add("orange");
-        assertEquals("Error",list1,obj.update(list,2,"kiwi"));
+        assertEquals("Error in array update",list1,obj.update(list,2,"kiwi"));
 
 
     }
@@ -49,7 +49,7 @@ public class UpdateArraysTest {
         list1.add("Melon");
         list1.add("kiwi");
         list1.add("orange");
-        assertEquals("Error",list1,obj.update(list,3,"kiwi"));
+        assertEquals("Error in array update",list1,obj.update(list,3,"kiwi"));
 
 
     }
@@ -67,7 +67,7 @@ public class UpdateArraysTest {
         list1.add("Melon");
         list1.add("Berry");
         list1.add("orange");
-        assertEquals("Error",list1,obj.update(list,0,"kiwi"));
+        assertEquals("Error in array update",list1,obj.update(list,0,"kiwi"));
 
 
     }
@@ -80,7 +80,15 @@ public class UpdateArraysTest {
         list.add("Berry");
         list.add("orange");
 
-        assertNotNull("Error in output",obj.update(list,0,"kiwi"));
+        assertNotNull("Error in array update in output",obj.update(list,0,"kiwi"));
+
+
+    }
+    @org.junit.Test
+    public void updateFailure1() {
+        ArrayList<String> list=new ArrayList<String >();
+
+        assertNull("Error in array update in output",obj.update(list,0,"kiwi"));
 
 
     }
@@ -94,7 +102,15 @@ public class UpdateArraysTest {
         list.add("Berry");
         list.add("orange");
         ArrayList<String>list1=new ArrayList<String >();
-        assertEquals("Error in output",list1,obj.remove(list));
+        assertEquals("Error in array update in output",list1,obj.remove(list));
+
+    }
+    @org.junit.Test
+    public void removeFailure() {
+        ArrayList<String> list=new ArrayList<String >();
+
+        assertNull("Error in array update in output",obj.remove(list));
+
 
     }
 }
